@@ -1,12 +1,17 @@
+# There should not be any puts or gets statements here.
+
 class Contact
  
   attr_accessor :name, :email
 
   def initialize(name, email)
     # TODO: assign local variables to instance variables
+    @name = name
+    @email = email
   end
  
   def to_s
+    return "name: #{name}, email: #{email}"
     # TODO: return string representation of Contact
   end
  
@@ -22,6 +27,7 @@ class Contact
  
     def all
       # TODO: Return the list of contacts, as is
+      
     end
     
     def show(id)
